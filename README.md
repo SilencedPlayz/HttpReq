@@ -5,18 +5,35 @@ Basically used for http request using fetch() function, by providing a short fet
 
 | Table of Contents |
 |---|
-| [Declaring URL](#declaring-url) |
-| [Calling Response](#calling-response) |
+| [new HttpReq()](#new-httpreq) |
+| [run()](#run) |
 | Wazzup |
 
 
-## Declaring URL:
-**Parameters**: ``new HttpReq(url: string)``
+## new HttpReq():
+**Parameters**:
+```js
+new HttpReq(url: string)
+```
 
 **Example**:
 ```js
 const link = new HttpReq("https://jsonplaceholder.typicode.com/posts/1/comments")
 ```
 
-## Calling Response
-**Parameters**: ``run(method: string<"GET":"PUT">, headers: object{}, body: object/array/int/string/bool)``
+## run()
+**Parameters**:
+```js
+run(method: string<"GET":"PUT">, headers: object{}, body: object/array/int/string/bool)
+```
+**Examples**
+<details>
+  <summary> GET method</summary>
+  
+  ```js
+  //default is GET
+  new HttpReq("https://jsonplaceholder.typicode.com/posts/1/comments").run()
+  //optional
+  new HttpReq("https://jsonplaceholder.typicode.com/posts/1/comments").run("GET")
+  ```
+</details>
