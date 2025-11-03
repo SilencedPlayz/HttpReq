@@ -11,11 +11,11 @@ Basically used for http request using fetch() function, by providing a short fet
 
 
 ## Declaring URL:
-Parameters:
+**Parameters**:
 ```js
 new HttpReq(url: string)
 ```
-Example:
+**Example**:
 ```js
-const link = new HttpReq("
+const link = new HttpReq("https://jsonplaceholder.typicode.com/posts/1/comments")
 ```
