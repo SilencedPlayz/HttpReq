@@ -34,15 +34,3 @@ class HttpReq {
     }
   }
 }
-
-//example
-const code = new HttpReq("https://jsonplaceholder.typicode.com/posts")
-code.OnSuccess((output)=>{
-  console.log("Found:")
-  console.log(output)
-})
-code.OnFail((error)=>{
-  console.error(error)
-})
-code.run()
-new HttpReq("https://jsonplaceholder.typicode.com/posts").run("POST", {}, {example: "hi"})
