@@ -23,14 +23,22 @@ class HttpReq {
     }
     try {
       const res = await fetch(this.url, options)
-      const data = await res.json()
+      const contentType = res.headers.get("Content-type") || ""
+      console.log(contentType)
+      let data;
+      
+      if(contentType.includes("application/json")){
+        data = await res.json()
+      }else{
+        data = await res.text()
+      }
+      
       if(this.onsuccess) this.onsuccess(data);
       else console.log(data);
       return data;
     } catch(e) {
       if(this.onerror) this.onerror(e);
-      else console.error(e);
-      throw e;
+      else console.log(e);
     }
   }
 }
