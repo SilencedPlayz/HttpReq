@@ -10,6 +10,8 @@
 
 > [Methods](#methods)
 
+<br>
+
 ## About
 
   **Made by SilencedCode**
@@ -21,6 +23,8 @@
   ```js
   <script src="https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq/httpreq.js"></script>
   ```
+
+<br>
 
 ## Main Class
 
@@ -44,10 +48,14 @@ The http that it will be requesting
 const link = new HttpReq("https://raw.githubusercontent.com/SilencedPlayz/HttpReq/refs/heads/main/httpreq.js")
 ```
 
+<br>
+
 ## Methods
 * [run](#run)
 * [OnSuccess](#onsuccess)
 * [OnError](#onerror)
+
+<br>
 
 ### run
 
@@ -87,6 +95,8 @@ const link = new HttpReq("https://jsonplaceholder.typicode.com/posts")
 link.run("POST", {"Content-Type": "application/json"}, {name: "Rex"})
 ```
 
+<br>
+
 ## OnSuccess
 
 ``OnSuccess((output: parameter) => {functions | nest})``
@@ -119,6 +129,8 @@ users.OnSuccess((data)=>{
 })
 users.run()
 ```
+
+<br>
 
 ## OnError
 
