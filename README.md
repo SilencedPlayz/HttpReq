@@ -21,7 +21,7 @@
 ## Installation
 * You can view the [CDN link](https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq@main/httpreq.js) to copy the code, or call it on html using:
   ```js
-  <script src="https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq/httpreq.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq@main/httpreq.js"></script>
   ```
 
 <br>
@@ -45,7 +45,7 @@ The http that it will be requesting
 **Examples**
 
 ```js
-const link = new HttpReq("https://raw.githubusercontent.com/SilencedPlayz/HttpReq/refs/heads/main/httpreq.js")
+const link = new HttpReq("https://jsonplaceholder.typicode.com/posts")
 ```
 
 <br>
