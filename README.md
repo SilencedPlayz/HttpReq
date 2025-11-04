@@ -17,7 +17,7 @@
   Used for http request using ``fetch()`` function from js, provides less typing and quick fetching. You can also customize the functions on success and on error of fetching.
 
 ## Installation
-* You can view the [CDN link](https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq/httpreq.js)https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq/httpreq.js) to copy the code, or call it on html using:
+* You can view the [CDN link](https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq/httpreq.js) to copy the code, or call it on html using:
   ```js
   <script src="https://cdn.jsdelivr.net/gh/SilencedPlayz/HttpReq/httpreq.js"></script>
   ```
