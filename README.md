@@ -68,7 +68,7 @@ Starting the http request to the given url
 
   The body or arguments to be sent in http request, *null* if its empty
 
-**Returns** object | Error - returns the data from the http, returns Error if failed
+**Returns** *object | Error* - returns the data from the http, returns Error if failed
 
 **Examples**
 
